@@ -62,7 +62,7 @@ Contains all theme styling.
 ### Requirements
 
 - Plain CSS only
-- No TailwindCSS
+- No Tailwind CSS
 - No Bootstrap
 - No SCSS/SASS
 - No external UI frameworks
@@ -215,7 +215,7 @@ Do NOT:
 
 - Use React, Vue, or Angular
 - Add npm dependencies
-- Use TailwindCSS
+- Use Tailwind CSS
 - Use Bootstrap
 - Add build tools
 - Add server-side code
