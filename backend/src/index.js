@@ -57,7 +57,9 @@ const connectDB = async (...args) => {
 };
 
 import {
-  scheduleWeeklyDigest
+  scheduleWeeklyDigest,
+  initializeDigestQueue,
+  startDigestWorker
 } from './services/weeklyDigestService.js';
 
 const app = express();
@@ -278,6 +280,12 @@ const startServer = async () => {
     }
 
     try {
+      const digestQueueReady = await initializeDigestQueue();
+
+      if (digestQueueReady) {
+        startDigestWorker();
+      }
+
       scheduleWeeklyDigest();
     } catch (digestError) {
       console.warn(
