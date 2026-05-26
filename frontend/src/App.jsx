@@ -52,8 +52,6 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
 import OpenRouterCallback from './pages/OpenRouterCallback';
-import DepthReveal from './components/portfolio/templates/Depth_Reveal';
-import MosaicAssemble from './components/portfolio/templates/Mosaic_Assemble';
 
 // Hub Imports
 import ResumeHub from './pages/hubs/ResumeHub';
@@ -172,8 +170,6 @@ function AppRoutes() {
         {/* Template Gallery Route (Registered at /templates) */}
         <Route path="/templates" element={<TemplateGallery />} />
         <Route path="/templates/chatbot" element={<ChatbotPortfolio />} />
-        <Route path="/templates/depth-reveal" element={<DepthReveal />} />
-        <Route path="/templates/mosaic-assemble" element={<MosaicAssemble />} />
         {/* Core Protected Routes */}
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/upload" element={<ProtectedRoute><Upload /></ProtectedRoute>} />
