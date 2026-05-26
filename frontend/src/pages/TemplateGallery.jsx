@@ -7,6 +7,7 @@ import { Moon, Sun, ChevronDown, Check, Eye, Star } from "lucide-react";
 import HolographicAbout from "../components/portfolio/templates/Holographic/About";
 import CulinaryAbout from "../components/portfolio/templates/Culinary_Restaurant/About";
 import TechStartupHero from "../components/portfolio/templates/Tech_Startup/Hero";
+import ArchitectureBlueprintHero from "../components/portfolio/templates/Architecture_Blueprint/Hero";
 import GeometricShapesAbout from "../components/portfolio/templates/Geometric_Shapes/About";
 import Navbar from '../components/Navbar'
 
@@ -412,6 +413,18 @@ export default function TemplateGallery() {
         </div>
         <div className="overflow-hidden rounded-2xl border border-cyan-500/20">
           <TechStartupHero />
+        </div>
+      </div>
+
+      <div className="mt-12">
+        <div className="mb-4 flex items-center gap-3 px-1">
+          <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-bold uppercase tracking-widest text-blue-400 border border-blue-500/30">
+            Preview
+          </span>
+          <h2 className="text-lg font-semibold text-foreground/70">Architecture Blueprint Theme — Hero Section</h2>
+        </div>
+        <div className="overflow-hidden rounded-2xl border border-blue-500/30">
+          <ArchitectureBlueprintHero />
         </div>
       </div>
     </div>
