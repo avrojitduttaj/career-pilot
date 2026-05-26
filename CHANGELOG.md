@@ -1,3 +1,11 @@
+## [1.31.1](https://github.com/anurag3407/career-pilot/compare/v1.31.0...v1.31.1) (2026-05-26)
+
+
+### Bug Fixes
+
+* correct HTML semantics in Graffiti StreetArt Hero component ([dd2db07](https://github.com/anurag3407/career-pilot/commit/dd2db0744f6a07036ac6ada988a4ccd25000a3df))
+* Update Graffiti StreetArt Hero with functional CTA buttons ([2ab81d2](https://github.com/anurag3407/career-pilot/commit/2ab81d2a3182c58d68c7066f1d5379b49f06d530))
+
 # [1.31.0](https://github.com/anurag3407/career-pilot/compare/v1.30.0...v1.31.0) (2026-05-26)
 
 
