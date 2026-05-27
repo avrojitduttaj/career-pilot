@@ -32,10 +32,7 @@ export default function PageTurner() {
           drawShadow={true}
           showCover={true}
           size="fixed"
-          minWidth={width}
-          maxWidth={width}
-          minHeight={height}
-          maxHeight={height}
+          
           flippingTime={650}
           usePortrait={true}
           startZIndex={0}

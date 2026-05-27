@@ -64,6 +64,7 @@ export function useBookSize() {
 // UPDATED SCROLL LOGIC HERE
 export function useWheelFlip(bookRef) {
   const lockRef = useRef(false)
+  const timerRef = useRef(null)
 
   useEffect(() => {
     const handleWheel = (event) => {
@@ -103,14 +104,22 @@ export function useWheelFlip(bookRef) {
 
       // Lock the flip for the duration of the animation (match this to flippingTime in index.jsx)
       lockRef.current = true
-      window.setTimeout(() => {
+      // store timer id so it can be cleared on unmount
+      timerRef.current = window.setTimeout(() => {
         lockRef.current = false
-      }, 750) 
+        timerRef.current = null
+      }, 750)
     }
 
     // Must be passive: false to allow event.preventDefault()
     window.addEventListener('wheel', handleWheel, { passive: false })
-    return () => window.removeEventListener('wheel', handleWheel)
+    return () => {
+      window.removeEventListener('wheel', handleWheel)
+      if (timerRef.current) {
+        clearTimeout(timerRef.current)
+        timerRef.current = null
+      }
+    }
   }, [bookRef])
 }
 

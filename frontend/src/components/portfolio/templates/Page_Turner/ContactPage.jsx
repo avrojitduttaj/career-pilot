@@ -6,16 +6,20 @@ const ContactPage = React.forwardRef(function ContactPage(_, ref) {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
 
   const contactLinks = [
-    { label: 'Email', value: email, href: email ? `mailto:${email}` : '#', icon: Mail },
-    { label: 'GitHub', value: github, href: github || '#', icon: Github },
-    { label: 'LinkedIn', value: linkedin, href: linkedin || '#', icon: Linkedin },
-    { label: 'Twitter', value: twitter, href: twitter || '#', icon: Sparkles },
+    { label: 'Email', value: email, href: email ? `mailto:${email}` : null, icon: Mail },
+    { label: 'GitHub', value: github, href: github || null, icon: Github },
+    { label: 'LinkedIn', value: linkedin, href: linkedin || null, icon: Linkedin },
+    { label: 'Twitter', value: twitter, href: twitter || null, icon: Sparkles },
   ]
 
   const handleSubmit = (event) => {
     event.preventDefault()
     if (!email) return
-    window.location.href = `mailto:${email}?subject=Portfolio Inquiry&body=Name: ${form.name}%0AEmail: ${form.email}%0A%0A${form.message}`
+    const params = new URLSearchParams({
+      subject: 'Portfolio Inquiry',
+      body: `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`,
+    })
+    window.location.href = `mailto:${email}?${params.toString()}`
   }
 
   return (
@@ -50,10 +54,17 @@ const ContactPage = React.forwardRef(function ContactPage(_, ref) {
             {/* Social Grid */}
             <div className="grid grid-cols-2 gap-2">
               {contactLinks.map((item, i) => (
-                <a key={i} href={item.href} target="_blank" rel="noreferrer" className="rounded-lg border border-slate-800 bg-[#080c14] p-3 text-white hover:border-cyan-500/30">
-                  <div className="text-[8px] uppercase tracking-[0.2em] text-cyan-400/60">{item.label}</div>
-                  <div className="mt-1 truncate text-[10px] font-bold">{item.value || 'N/A'}</div>
-                </a>
+                item.href ? (
+                  <a key={i} href={item.href} target="_blank" rel="noreferrer" className="rounded-lg border border-slate-800 bg-[#080c14] p-3 text-white hover:border-cyan-500/30">
+                    <div className="text-[8px] uppercase tracking-[0.2em] text-cyan-400/60">{item.label}</div>
+                    <div className="mt-1 truncate text-[10px] font-bold">{item.value || 'N/A'}</div>
+                  </a>
+                ) : (
+                  <div key={i} className="rounded-lg border border-slate-800 bg-[#080c14] p-3 text-white opacity-80">
+                    <div className="text-[8px] uppercase tracking-[0.2em] text-cyan-400/60">{item.label}</div>
+                    <div className="mt-1 truncate text-[10px] font-bold">{item.value || 'N/A'}</div>
+                  </div>
+                )
               ))}
             </div>
 

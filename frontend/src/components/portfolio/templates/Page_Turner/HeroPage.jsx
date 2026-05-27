@@ -1,5 +1,6 @@
 import React from 'react'
-import { Github, Linkedin, Mail, motion, safePersonal, safeSocials, Sparkles } from './shared'
+import { Github, Linkedin, Mail, motion, safePersonal, safeSocials } from './shared'
+import { Twitter } from 'lucide-react'
 
 const HeroPage = React.forwardRef(function HeroPage(_, ref) {
   const { name = 'Your Name', title = 'Creative Professional' } = safePersonal
@@ -7,8 +8,8 @@ const HeroPage = React.forwardRef(function HeroPage(_, ref) {
   const socials = [
     { href: safeSocials.github, icon: Github, label: 'GitHub' },
     { href: safeSocials.linkedin, icon: Linkedin, label: 'LinkedIn' },
-    { href: safeSocials.twitter, icon: Sparkles, label: 'Twitter' },
-    { href: safeSocials.email ? `mailto:${safeSocials.email}` : '', icon: Mail, label: 'Email' },
+    { href: safeSocials.twitter, icon: Twitter, label: 'Twitter' },
+    { href: safeSocials.email ? `mailto:${safeSocials.email}` : null, icon: Mail, label: 'Email' },
   ].filter((item) => item.href)
 
   return (
@@ -86,14 +87,15 @@ const HeroPage = React.forwardRef(function HeroPage(_, ref) {
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ type: 'spring', stiffness: 200, delay: 0.6 + idx * 0.08 }}
-                  // COOL & UNIQUE HOVER ANIMATION
+                  // COOL & UNIQUE HOVER ANIMATION (include color change here)
                   whileHover={{ 
                     scale: 1.15, 
                     rotate: -10, 
                     boxShadow: "0px 0px 20px rgba(34, 211, 238, 0.4)",
-                    borderColor: "#22d3ee" 
+                    borderColor: "#22d3ee",
+                    color: "#22d3ee"
                   }}
-                  className="rounded-lg border border-slate-800 bg-[#080c14] p-4 text-slate-400 shadow-inner transition-all duration-300 hover:text-cyan-400"
+                  className="rounded-lg border border-slate-800 bg-[#080c14] p-4 text-slate-400 shadow-inner transition-all duration-300"
                 >
                   <Icon size={20} />
                 </motion.a>

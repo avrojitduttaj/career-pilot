@@ -12,6 +12,12 @@ const ExperiencePage = React.forwardRef(function ExperiencePage(_, ref) {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  // Clamp currentPage when itemsPerPage or data change
+  useEffect(() => {
+    const newTotalPages = Math.max(1, Math.ceil((safeExperience?.length || 0) / itemsPerPage))
+    setCurrentPage((prev) => Math.min(prev, Math.max(0, newTotalPages - 1)))
+  }, [itemsPerPage, safeExperience])
+
   const paginatedData = (safeExperience || []).slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
   const totalPages = Math.ceil((safeExperience?.length || 0) / itemsPerPage)
 

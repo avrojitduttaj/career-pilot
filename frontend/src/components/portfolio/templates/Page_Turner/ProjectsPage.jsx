@@ -12,6 +12,12 @@ const ProjectsPage = React.forwardRef(function ProjectsPage(_, ref) {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  // Clamp currentPage when itemsPerPage or safeProjects change
+  useEffect(() => {
+    const newTotalPages = Math.max(1, Math.ceil((safeProjects?.length || 0) / itemsPerPage))
+    setCurrentPage((prev) => Math.min(prev, Math.max(0, newTotalPages - 1)))
+  }, [itemsPerPage, safeProjects])
+
   const totalPages = Math.ceil((safeProjects?.length || 0) / itemsPerPage)
   const currentProjects = (safeProjects || []).slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
 
@@ -32,7 +38,7 @@ const ProjectsPage = React.forwardRef(function ProjectsPage(_, ref) {
             {currentProjects.map((project, index) => (
               <div key={index} className="group flex flex-col overflow-hidden rounded-xl border border-slate-800 bg-[#080c14] hover:border-cyan-500/50 transition-all duration-300">
                 <div className="h-20 md:h-28 bg-slate-950 flex items-center justify-center text-[9px] text-cyan-900 font-mono">
-                   {project.image ? <img src={project.image} className="w-full h-full object-cover" /> : "PREVIEW"}
+                   {project.image ? <img src={project.image} alt={project.title || project.name || 'Project preview'} className="w-full h-full object-cover" /> : "PREVIEW"}
                 </div>
                 <div className="p-3 flex flex-col justify-between flex-1">
                   <h3 className="text-xs font-bold text-white truncate">{project.title}</h3>

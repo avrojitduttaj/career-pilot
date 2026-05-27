@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion, Badge, PageFrame, safePersonal, safeStats } from './shared'
+import data from '../../../../data/dummy_data.json'
 
 const AboutPage = React.forwardRef(function AboutPage(_, ref) {
   const { name = 'Your Name', bio = '', avatar = '', location = 'Remote', title = 'Portfolio Creator' } = safePersonal
@@ -98,11 +99,11 @@ const AboutPage = React.forwardRef(function AboutPage(_, ref) {
           <div className="flex-1 min-h-0 w-full md:w-[60%] flex flex-col justify-start md:pt-8 gap-4 md:gap-6">
             
             {/* Expanded Bio Box with Ambient Glow */}
-            <motion.div 
-              variants={itemVariants}
-              whileHover={{ borderColor: 'rgba(51,65,85,0.6)' }}
-              className="w-full shrink-0 md:shrink-1 overflow-y-auto max-h-[150px] md:max-h-[260px] custom-scrollbar rounded-xl md:rounded-2xl border border-slate-900 bg-gradient-to-br from-[#080c14] to-[#04070d] p-4 md:p-6 shadow-inner border-t-slate-800/40 transition-colors duration-300"
-            >
+              <motion.div 
+                variants={itemVariants}
+                whileHover={{ borderColor: 'rgba(51,65,85,0.6)' }}
+                className="w-full shrink-0 md:shrink overflow-y-auto max-h-[150px] md:max-h-[260px] custom-scrollbar rounded-xl md:rounded-2xl border border-slate-900 bg-gradient-to-br from-[#080c14] to-[#04070d] p-4 md:p-6 shadow-inner border-t-slate-800/40 transition-colors duration-300"
+              >
               <p className="text-slate-300 text-xs sm:text-sm md:text-[15px] lg:text-base leading-relaxed md:leading-loose italic font-normal text-center md:text-left">
                 {bio || 'Biography configuration log asset missing.'}
               </p>
@@ -137,7 +138,7 @@ const AboutPage = React.forwardRef(function AboutPage(_, ref) {
               variants={itemVariants}
               className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 md:gap-2 shrink-0 pt-4 md:pt-5 border-t border-slate-900/40 w-full md:pl-6"
             >
-              {['Curious', 'Detail-driven', 'Reliable', 'Creative'].map((item) => (
+              {(data.portfolioTraits || ['Curious', 'Detail-driven', 'Reliable', 'Creative']).map((item) => (
                 <motion.div
                   key={item}
                   whileHover={{ scale: 1.05, y: -1 }}

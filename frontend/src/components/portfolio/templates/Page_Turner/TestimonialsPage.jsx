@@ -12,6 +12,12 @@ const TestimonialsPage = React.forwardRef(function TestimonialsPage(_, ref) {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  // Ensure currentPage stays in-range when itemsPerPage or data change
+  useEffect(() => {
+    const newTotalPages = Math.max(1, Math.ceil((safeTestimonials?.length || 0) / itemsPerPage))
+    setCurrentPage((prev) => Math.min(prev, Math.max(0, newTotalPages - 1)))
+  }, [itemsPerPage, safeTestimonials])
+
   const paginatedData = (safeTestimonials || []).slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
   const totalPages = Math.ceil((safeTestimonials?.length || 0) / itemsPerPage)
 
