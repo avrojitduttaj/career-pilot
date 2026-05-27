@@ -1,3 +1,18 @@
+# [1.48.0](https://github.com/anurag3407/career-pilot/compare/v1.47.0...v1.48.0) (2026-05-27)
+
+
+### Bug Fixes
+
+* improve RunwayLookbook UI for PR ([c934f39](https://github.com/anurag3407/career-pilot/commit/c934f396785d328d9dd02c839a0851136df000a5))
+* improve UI ([aae3712](https://github.com/anurag3407/career-pilot/commit/aae3712fc194c88b19911912577918202f8e2937))
+* update RunwayLookbook UI ([cec0188](https://github.com/anurag3407/career-pilot/commit/cec0188ae8267ad6e22f53830c609e9c0c00e7ce))
+* update RunwayLookbook UI improvements ([22a086e](https://github.com/anurag3407/career-pilot/commit/22a086e771e2fac62753749bdd4cead20f7e8cbe))
+
+
+### Features
+
+* implement RunwayLookbook high fashion template ([2cf12b5](https://github.com/anurag3407/career-pilot/commit/2cf12b5444b7a34650a81af61d40b22113fe760f))
+
 # [1.47.0](https://github.com/anurag3407/career-pilot/compare/v1.46.1...v1.47.0) (2026-05-27)
 
 
