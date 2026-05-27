@@ -16,7 +16,7 @@ const categories = ['INFORMATION', 'PORTFOLIO', 'COMMUNITY'];
 
 export default function ChannelSidebar({ activeChannel, setActiveChannel, name, title, avatar, forceShow = false }) {
   return (
-    <div className={`${forceShow ? 'flex' : 'hidden md:flex'} flex-col w-60 min-w-[240px] bg-[#2B2D31] overflow-hidden`}>
+    <div className={`${forceShow ? 'flex' : 'hidden md:flex'} flex-col w-60 min-w-[240px] bg-[#2B2D31] overflow-hidden select-none`}>
       {/* Server Header */}
       <div className="h-12 px-4 flex items-center justify-between border-b border-[#1F2023] shadow-md cursor-pointer hover:bg-[#35373C] transition-colors">
         <h2 className="text-[15px] font-semibold text-white truncate">{name}'s Portfolio</h2>

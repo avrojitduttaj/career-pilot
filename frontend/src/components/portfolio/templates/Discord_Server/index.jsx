@@ -58,7 +58,7 @@ export default function DiscordServer() {
   };
 
   return (
-    <div className="h-screen w-full flex bg-[#313338] text-[#DBDEE1] font-sans overflow-hidden select-none">
+    <div className="h-screen w-full flex bg-[#313338] text-[#DBDEE1] font-sans overflow-hidden">
       {/* Server Sidebar - far left */}
       <ServerSidebar avatar={data.personal.avatar} name={data.personal.name} />
 
