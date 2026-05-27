@@ -1,3 +1,15 @@
+# [1.39.0](https://github.com/anurag3407/career-pilot/compare/v1.38.1...v1.39.0) (2026-05-27)
+
+
+### Bug Fixes
+
+* return usage from summarizer and validate all required params in tokenTracker ([fae0ff7](https://github.com/anurag3407/career-pilot/commit/fae0ff76cc9950970670d48e4c96767ee45bda5d))
+
+
+### Features
+
+* implement MongoDB model to track Gemini AI token usage ([ab1c332](https://github.com/anurag3407/career-pilot/commit/ab1c332e424220a268d28128a39ca3e048ea1899))
+
 ## [1.38.1](https://github.com/anurag3407/career-pilot/compare/v1.38.0...v1.38.1) (2026-05-27)
 
 
