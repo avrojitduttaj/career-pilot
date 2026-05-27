@@ -1,3 +1,16 @@
+# [1.36.0](https://github.com/anurag3407/career-pilot/compare/v1.35.0...v1.36.0) (2026-05-27)
+
+
+### Bug Fixes
+
+* **build:** resolve merge conflict in root package.json ([9d9f96c](https://github.com/anurag3407/career-pilot/commit/9d9f96cc16e2990f40456dd0230ab4265de84cd7))
+
+
+### Features
+
+* **portfolio:** build Drag Portfolio template (Fixes [#1989](https://github.com/anurag3407/career-pilot/issues/1989)) ([8abf16d](https://github.com/anurag3407/career-pilot/commit/8abf16d3d0f7d1b106d066ca03a88373d9918bca))
+* **portfolio:** register Drag Portfolio preview in gallery page ([defa0cc](https://github.com/anurag3407/career-pilot/commit/defa0ccac3892686fb34baa5267a187edf8979ef))
+
 # [1.35.0](https://github.com/anurag3407/career-pilot/compare/v1.34.2...v1.35.0) (2026-05-27)
 
 
