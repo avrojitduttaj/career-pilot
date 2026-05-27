@@ -28,6 +28,7 @@ import ResumeBuilder from './pages/ResumeBuilder';
 import TextToResume from './pages/TextToResume';
 import About from './components/portfolio/templates/Tech_Startup/About';
 import ChatbotPortfolio from "./components/portfolio/templates/Chatbot_Portfolio";
+import GamifiedXP from "./components/portfolio/templates/Gamified_XP";
 
 import JobTracker from './pages/JobTracker';
 import { Community, NotFound } from './pages';
@@ -171,6 +172,7 @@ function AppRoutes() {
         {/* Template Gallery Route (Registered at /templates) */}
         <Route path="/templates" element={<TemplateGallery />} />
         <Route path="/templates/chatbot" element={<ChatbotPortfolio />} />
+        <Route path="/templates/gamified-xp" element={<GamifiedXP />} />
         {/* Core Protected Routes */}
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/upload" element={<ProtectedRoute><Upload /></ProtectedRoute>} />
