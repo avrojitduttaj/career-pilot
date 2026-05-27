@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function RunwayLookbook() {
   return (
@@ -33,8 +33,7 @@ export default function RunwayLookbook() {
       
       <div className="text-center mb-20">
 
-        <div className="flex items-center justify-center gap-3 mb-4 bg-stone-200 py-2 px-6 rounded-full w-fit mx-auto">
-
+        <div className= "w-full min-h-[400px] flex items-center justify-center border-2-dashed border-gray-300 rounded-xl p-8 bg-stone-300"  >
           <p className="uppercase tracking-[0.4em] text-stone-700 text-xl font-serif">
             Runway Lookbook
           </p>
@@ -57,7 +56,7 @@ export default function RunwayLookbook() {
        
         <div className="bg-stone-200 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
 
-          <div className="h-96 bg-gradient-to-b from-stone-500 via-stone-400 to-stone-700"></div>
+          <div className="h-96 b-linear-to-b from-stone-500 via-stone-400 to-stone-700"></div>
 
           <div className="p-7">
 
@@ -83,7 +82,7 @@ export default function RunwayLookbook() {
         
         <div className="bg-stone-200 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
 
-          <div className="h-96 bg-gradient-to-b from-stone-500 via-stone-400 to-stone-700"></div>
+          <div className="h-96 b-linear-to-b from-stone-500 via-stone-400 to-stone-700"></div>
 
           <div className="p-7">
 
@@ -109,7 +108,7 @@ export default function RunwayLookbook() {
         
         <div className="bg-stone-200 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
 
-          <div className="h-96 bg-gradient-to-b from-stone-500 via-stone-400 to-stone-700"></div>
+          <div className="h-96 b-linear-to-b from-stone-500 via-stone-400 to-stone-700"></div>
 
           <div className="p-6">
 
@@ -135,7 +134,7 @@ export default function RunwayLookbook() {
         
         <div className="bg-stone-200 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
 
-          <div className="h-96 bg-gradient-to-b from-stone-500 via-stone-400 to-stone-700"></div>
+          <div className="h-96 b-linear-to-b from-stone-500 via-stone-400 to-stone-700"></div>
 
           <div className="p-6">
 
@@ -148,7 +147,7 @@ export default function RunwayLookbook() {
             </h2>
 
             <p className="mt-4 text-black font-mono leading-7">
-              Time travel to traditional times.
+              Timeless fashion with a hint of mordern luxury.
             </p>
 
             <button className="mt-6 text-black hover:text-red-950 transition-all duration-300 font-serif">
@@ -161,7 +160,7 @@ export default function RunwayLookbook() {
         
         <div className="bg-stone-200 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
 
-          <div className="h-96 bg-gradient-to-b from-stone-500 via-stone-400 to-stone-700"></div>
+          <div className="h-96 b-linear-to-b from-stone-500 via-stone-400 to-stone-700"></div>
 
           <div className="p-7">
 
@@ -187,7 +186,7 @@ export default function RunwayLookbook() {
         
         <div className="bg-stone-200 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
 
-          <div className="h-96 bg-gradient-to-b from-stone-500 via-stone-400 to-stone-700"></div>
+          <div className="h-96 b-linear-to-b from-stone-500 via-stone-400 to-stone-700"></div>
 
           <div className="p-7">
 
