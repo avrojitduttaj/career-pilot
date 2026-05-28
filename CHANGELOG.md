@@ -1,3 +1,10 @@
+# [1.62.0](https://github.com/anurag3407/career-pilot/compare/v1.61.0...v1.62.0) (2026-05-28)
+
+
+### Features
+
+* implement Deep Ocean contact section ([0ea1005](https://github.com/anurag3407/career-pilot/commit/0ea1005c054b2f19bbea2304c7084cf5d3ecc195))
+
 # [1.61.0](https://github.com/anurag3407/career-pilot/compare/v1.60.0...v1.61.0) (2026-05-28)
 
 
