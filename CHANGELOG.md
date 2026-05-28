@@ -1,3 +1,16 @@
+# [1.63.0](https://github.com/anurag3407/career-pilot/compare/v1.62.1...v1.63.0) (2026-05-28)
+
+
+### Bug Fixes
+
+* add fallback styling for subject pill ([ca1d993](https://github.com/anurag3407/career-pilot/commit/ca1d993c4e3933ac8003d5b2e84b01c20a7fd9f1))
+* make project count dynamic ([0a7cad4](https://github.com/anurag3407/career-pilot/commit/0a7cad426f462efc9ba7b4d3088f1e876fba2748))
+
+
+### Features
+
+* implement Chalkboard Education Projects section ([#1501](https://github.com/anurag3407/career-pilot/issues/1501)) ([b0ecd70](https://github.com/anurag3407/career-pilot/commit/b0ecd7061b53b4733be087882f7fc167993ab09b))
+
 ## [1.62.1](https://github.com/anurag3407/career-pilot/compare/v1.62.0...v1.62.1) (2026-05-28)
 
 
