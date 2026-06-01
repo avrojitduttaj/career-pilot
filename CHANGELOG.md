@@ -1,3 +1,20 @@
+# [1.121.0](https://github.com/anurag3407/career-pilot/compare/v1.120.0...v1.121.0) (2026-06-01)
+
+
+### Bug Fixes
+
+* add missing imports to TemplateGallery so /templates route works in production ([9019376](https://github.com/anurag3407/career-pilot/commit/90193762bb0b2c8863246b7829cfb1fc18954ca1))
+* guard against missing personal.email/phone/resumeUrl fields in upstream dummy_data ([adbc272](https://github.com/anurag3407/career-pilot/commit/adbc272b971169758c18f6c150235ca2df4062bd))
+* isolate template navbars inside scroll containers to prevent overlap with page navbar ([a9b7546](https://github.com/anurag3407/career-pilot/commit/a9b75462bd76535ce0dc4d7cb54dd0cd7a3f3d9e))
+* use CSS transform to contain template fixed navbars inside preview frames ([80be395](https://github.com/anurag3407/career-pilot/commit/80be395c2c7fb21a9ce3d301128f59fd0e29df63))
+
+
+### Features
+
+* add site-wide Navbar to TemplateGallery for full project navigation ([6d88270](https://github.com/anurag3407/career-pilot/commit/6d882706f0bd111e6b672525f8d327415dfd63c7))
+* implement Desert Dunes portfolio template ([#1952](https://github.com/anurag3407/career-pilot/issues/1952)) ([d049a52](https://github.com/anurag3407/career-pilot/commit/d049a522e8bfc7d6dced4d3df12be9ca19f1ca49))
+* restore all portfolio template previews in TemplateGallery alongside Desert Dunes ([8906242](https://github.com/anurag3407/career-pilot/commit/8906242a0018ef6156911a07aa73ec84ca732710))
+
 # [1.120.0](https://github.com/anurag3407/career-pilot/compare/v1.119.0...v1.120.0) (2026-06-01)
 
 
