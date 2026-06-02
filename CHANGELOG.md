@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/advikdivekar/career-pilot-advik/compare/v1.2.0...v1.3.0) (2026-06-02)
+
+
+### Features
+
+* implement High Fashion Hero, Projects, Contact, ResumeCTA sections with full editorial design ([9c71ba5](https://github.com/advikdivekar/career-pilot-advik/commit/9c71ba5aa112c71f9b0008ebf723181dcff7a5b5))
+
 # [1.2.0](https://github.com/advikdivekar/career-pilot-advik/compare/v1.1.1...v1.2.0) (2026-06-02)
 
 
