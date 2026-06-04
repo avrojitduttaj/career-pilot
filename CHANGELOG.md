@@ -1,3 +1,18 @@
+# [1.146.0](https://github.com/anurag3407/career-pilot/compare/v1.145.2...v1.146.0) (2026-06-04)
+
+
+### Bug Fixes
+
+* address CodeRabbit accessibility feedback ([2d0dca9](https://github.com/anurag3407/career-pilot/commit/2d0dca9e6822be74765c315dd3270305ce704ae2))
+* use compressionMiddleware from middleware file in index.js ([ec27830](https://github.com/anurag3407/career-pilot/commit/ec2783033802d52b3d53ed7026834ce06bac64ea))
+
+
+### Features
+
+* add API response compression middleware ([83c8e8f](https://github.com/anurag3407/career-pilot/commit/83c8e8fb9eb048c4064d020a289e42fc08f95240))
+* implement terminal CLI command history section ([133f9eb](https://github.com/anurag3407/career-pilot/commit/133f9ebc4dc181690f730fa3ef6e8cd864a497fb))
+* implement terminal CLI contact section ([10b0efb](https://github.com/anurag3407/career-pilot/commit/10b0efb4889e7db84fc1968e1827613097da09ae))
+
 ## [1.145.2](https://github.com/anurag3407/career-pilot/compare/v1.145.1...v1.145.2) (2026-06-04)
 
 
