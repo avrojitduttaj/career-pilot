@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+
+import { useRef } from 'react';
+import { useScroll, useTransform } from 'framer-motion';
 import { Star, ExternalLink, Github } from 'lucide-react';
 import { SectionHeading } from './shared';
 import data from '../../../../data/dummy_data.json';
@@ -66,21 +67,21 @@ export default function ProjectsZoom() {
               >
                 <div 
                   style={{ transform: `rotate(${rotation}deg)` }}
-                  className="bg-zinc-900/95 border border-zinc-800 p-6 md:p-10 rounded-[2rem] w-full max-w-5xl shadow-2xl group hover:border-cyan-500/50 transition-colors duration-500"
+                  className="bg-zinc-900/95 border border-zinc-800 p-6 md:p-10 rounded-4xl w-full max-w-5xl shadow-2xl group hover:border-cyan-500/50 transition-colors duration-500"
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
                     
-                    <div className="relative overflow-hidden rounded-2xl h-56 sm:h-72 lg:h-[420px] bg-zinc-800">
+                    <div className="relative overflow-hidden rounded-2xl h-56 sm:h-72 lg:h-105 bg-zinc-800">
                       <img 
                         src={project.image || 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80'} 
                         alt={project.title} 
                         className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-[1.5s] ease-out" 
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                      <div className="absolute inset-0 bg-linear-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
                     </div>
 
                     <div className="flex flex-col justify-center">
-                      <h3 className="text-3xl md:text-5xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400">
+                      <h3 className="text-3xl md:text-5xl font-bold text-transparent mb-4 bg-clip-text bg-linear-to-r from-white to-zinc-400">
                         {project.title}
                       </h3>
                       <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
