@@ -201,6 +201,7 @@ const JobTracker = () => {
           break;
         }
         failedCount += 1;
+        syncedIds.push(update.id);
       }
     }
 
