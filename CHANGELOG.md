@@ -1,3 +1,10 @@
+# [1.180.0](https://github.com/anurag3407/career-pilot/compare/v1.179.0...v1.180.0) (2026-06-07)
+
+
+### Features
+
+* add achievement impact analyzer ([3404c84](https://github.com/anurag3407/career-pilot/commit/3404c8445f7f19c66e8973e299d8d52e36a7a7f8))
+
 # [1.179.0](https://github.com/anurag3407/career-pilot/compare/v1.178.0...v1.179.0) (2026-06-07)
 
 
