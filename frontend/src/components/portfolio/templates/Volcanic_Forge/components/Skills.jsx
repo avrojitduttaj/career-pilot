@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { Terminal } from 'lucide-react';
 import LavaAnimate from '../LavaAnimate';
 import SectionHeader from './SectionHeader';
@@ -37,7 +35,7 @@ export default function Skills({ skills }) {
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
                       transition={{ duration: 1.5, ease: [0.075, 0.82, 0.165, 1], delay: 0.2 }}
-                      className="h-full bg-gradient-to-r from-orange-600 via-red-500 to-amber-400 relative overflow-hidden"
+                      className="h-full bg-linear-to-r from-orange-600 via-red-500 to-amber-400 relative overflow-hidden"
                     >
                       <motion.div
                         animate={{ x: ['-100%', '100%'] }}

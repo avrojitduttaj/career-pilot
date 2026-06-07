@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 import LavaAnimate from '../LavaAnimate';
 import SectionHeader from './SectionHeader';
@@ -26,7 +24,7 @@ export default function Projects({ projects }) {
                 <div className="relative h-48 overflow-hidden">
                   <div className="absolute inset-0 bg-stone-800/80 group-hover:bg-transparent transition-colors z-10 mix-blend-multiply" />
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent z-10" />
+                  <div className="absolute inset-0 bg-linear-to-t from-stone-900 to-transparent z-10" />
                 </div>
                 <div className="p-6 relative z-20">
                   <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">{project.title}</h3>

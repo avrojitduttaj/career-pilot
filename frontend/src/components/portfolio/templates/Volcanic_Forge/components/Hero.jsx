@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const lavaVariants = {

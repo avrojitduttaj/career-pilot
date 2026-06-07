@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
 import LavaAnimate from '../LavaAnimate';
 import SectionHeader from './SectionHeader';
@@ -22,7 +20,7 @@ export default function Experience({ experience }) {
                 transition={{ duration: 0.6, ease: [0.075, 0.82, 0.165, 1], delay: idx * 0.15 }}
                 className="relative pl-8 md:pl-12 group"
               >
-                <div className="absolute w-4 h-4 bg-stone-950 border-2 border-orange-500 rounded-full -left-[9px] top-2 shadow-[0_0_10px_rgba(249,115,22,0.6)] group-hover:bg-orange-500 group-hover:scale-125 group-hover:shadow-[0_0_20px_rgba(249,115,22,1)] transition-all duration-300" />
+                <div className="absolute w-4 h-4 bg-stone-950 border-2 border-orange-500 rounded-full -left-2.25 top-2 shadow-[0_0_10px_rgba(249,115,22,0.6)] group-hover:bg-orange-500 group-hover:scale-125 group-hover:shadow-[0_0_20px_rgba(249,115,22,1)] transition-all duration-300" />
 
                 <div className="bg-stone-900/60 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-stone-800 group-hover:border-orange-500/60 group-hover:shadow-[0_10px_30px_-10px_rgba(249,115,22,0.5)] group-hover:-translate-y-1 transition-all duration-300">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-4">

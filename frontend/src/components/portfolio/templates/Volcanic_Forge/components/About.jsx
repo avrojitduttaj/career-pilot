@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import LavaAnimate from '../LavaAnimate';
 
@@ -8,7 +6,7 @@ export default function About({ personal, stats, skills }) {
   return (
     <section id="about" className="py-24 w-full relative z-10 flex justify-center">
       <LavaAnimate className="flex! w-full justify-center" particleCount={120} formedDelay={1800} meltAmount={10} duration={3.5} particleSize={[15, 38]}>
-        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '0px' }} transition={{ duration: 0.8 }} className="max-w-5xl mx-auto bg-gradient-to-br from-stone-900/70 via-stone-900/45 to-stone-950/70 border border-orange-500/15 rounded-2xl p-6 md:p-10 w-full">
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '0px' }} transition={{ duration: 0.8 }} className="max-w-5xl mx-auto bg-linear-to-br from-stone-900/70 via-stone-900/45 to-stone-950/70 border border-orange-500/15 rounded-2xl p-6 md:p-10 w-full">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-black text-white">About Me</h2>
             <p className="mt-3 text-stone-400 text-base md:text-lg">A concise summary of background, location, and measurable outcomes.</p>
