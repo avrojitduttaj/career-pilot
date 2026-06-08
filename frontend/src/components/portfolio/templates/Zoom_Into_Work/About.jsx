@@ -1,6 +1,6 @@
 
 import { User, MapPin, Briefcase } from 'lucide-react';
-import { SectionHeading, AnimatedCounter } from './shared';
+import { SectionHeading, AnimatedCounter } from './Shared';
 import data from '../../../../data/dummy_data.json';
 
 export default function About() {
